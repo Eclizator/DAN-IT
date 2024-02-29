@@ -1,0 +1,14 @@
+    2  useradd bob
+    5  usermod -aG sudo bob
+    6  cd /home/bob/
+    7  pwd
+    8  vim change_hostname.sh
+    9  chown bob:bob /home/bob/change_hostname.sh
+   10  chmod u+x /home/bob/change_hostname.sh 
+   11  bash change_hostname.sh 
+   12  hostname
+   13  apt install nginx
+   14  systemctl status nginx
+   15  netstat -tulpn
+   16  apt install net-tools
+   17  netstat -tulpn
