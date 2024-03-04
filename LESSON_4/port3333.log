@@ -1,0 +1,104 @@
+root@orgrimar:/home/ecliz/DAN-IT/LESSON_4# sudo /usr/sbin/sshd -p 3333 -d
+debug1: sshd version OpenSSH_8.9, OpenSSL 3.0.2 15 Mar 2022
+debug1: private host key #0: ssh-rsa SHA256:6z1L5AXVox8Flq9nwDmyFd+cJMAM4ltVVlVeG9sYklk
+debug1: private host key #1: ecdsa-sha2-nistp256 SHA256:y3P/sAijK0KcCZcM/HgawPYTObG+7firu//URMBOyKs
+debug1: private host key #2: ssh-ed25519 SHA256:czPzeqZwdj5P7aujrdb0PO49RIGYJ5in6Dm5HrMCY+U
+debug1: rexec_argv[0]='/usr/sbin/sshd'
+debug1: rexec_argv[1]='-p'
+debug1: rexec_argv[2]='3333'
+debug1: rexec_argv[3]='-d'
+debug1: Set /proc/self/oom_score_adj from 0 to -1000
+debug1: Bind to port 3333 on 0.0.0.0.
+Server listening on 0.0.0.0 port 3333.
+debug1: Server will not fork when running in debugging mode.
+debug1: rexec start in 4 out 4 newsock 4 pipe -1 sock 7
+debug1: sshd version OpenSSH_8.9, OpenSSL 3.0.2 15 Mar 2022
+debug1: private host key #0: ssh-rsa SHA256:6z1L5AXVox8Flq9nwDmyFd+cJMAM4ltVVlVeG9sYklk
+debug1: private host key #1: ecdsa-sha2-nistp256 SHA256:y3P/sAijK0KcCZcM/HgawPYTObG+7firu//URMBOyKs
+debug1: private host key #2: ssh-ed25519 SHA256:czPzeqZwdj5P7aujrdb0PO49RIGYJ5in6Dm5HrMCY+U
+debug1: inetd sockets after dupping: 3, 3
+Connection from 192.168.1.239 port 50762 on 192.168.1.128 port 3333 rdomain ""
+debug1: Local version string SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.6
+debug1: Remote protocol version 2.0, remote software version OpenSSH_8.9p1 Ubuntu-3ubuntu0.3
+debug1: compat_banner: match: OpenSSH_8.9p1 Ubuntu-3ubuntu0.3 pat OpenSSH* compat 0x04000000
+debug1: permanently_set_uid: 106/65534 [preauth]
+debug1: list_hostkey_types: rsa-sha2-512,rsa-sha2-256,ecdsa-sha2-nistp256,ssh-ed25519 [preauth]
+debug1: SSH2_MSG_KEXINIT sent [preauth]
+debug1: SSH2_MSG_KEXINIT received [preauth]
+debug1: kex: algorithm: curve25519-sha256 [preauth]
+debug1: kex: host key algorithm: ssh-ed25519 [preauth]
+debug1: kex: client->server cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none [preauth]
+debug1: kex: server->client cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none [preauth]
+debug1: expecting SSH2_MSG_KEX_ECDH_INIT [preauth]
+debug1: SSH2_MSG_KEX_ECDH_INIT received [preauth]
+debug1: rekey out after 134217728 blocks [preauth]
+debug1: SSH2_MSG_NEWKEYS sent [preauth]
+debug1: Sending SSH2_MSG_EXT_INFO [preauth]
+debug1: expecting SSH2_MSG_NEWKEYS [preauth]
+debug1: SSH2_MSG_NEWKEYS received [preauth]
+debug1: rekey in after 134217728 blocks [preauth]
+debug1: KEX done [preauth]
+debug1: userauth-request for user ecliz service ssh-connection method none [preauth]
+debug1: attempt 0 failures 0 [preauth]
+debug1: PAM: initializing for "ecliz"
+debug1: PAM: setting PAM_RHOST to "192.168.1.239"
+debug1: PAM: setting PAM_TTY to "ssh"
+debug1: userauth-request for user ecliz service ssh-connection method password [preauth]
+debug1: attempt 1 failures 0 [preauth]
+debug1: PAM: password authentication accepted for ecliz
+debug1: do_pam_account: called
+Accepted password for ecliz from 192.168.1.239 port 50762 ssh2
+debug1: monitor_child_preauth: user ecliz authenticated by privileged process
+debug1: monitor_read_log: child log fd closed
+debug1: PAM: establishing credentials
+User child is on pid 2173
+debug1: SELinux support disabled
+debug1: PAM: establishing credentials
+debug1: permanently_set_uid: 1000/1000
+debug1: rekey in after 134217728 blocks
+debug1: rekey out after 134217728 blocks
+debug1: ssh_packet_set_postauth: called
+debug1: active: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding
+debug1: Entering interactive session for SSH2.
+debug1: server_init_dispatch
+debug1: server_input_channel_open: ctype session rchan 0 win 1048576 max 16384
+debug1: input_session_request
+debug1: channel 0: new [server-session]
+debug1: session_new: session 0
+debug1: session_open: channel 0
+debug1: session_open: session 0: link with channel 0
+debug1: server_input_channel_open: confirm session
+debug1: server_input_global_request: rtype no-more-sessions@openssh.com want_reply 0
+debug1: server_input_channel_req: channel 0 request pty-req reply 1
+debug1: session_by_channel: session 0 channel 0
+debug1: session_input_channel_req: session 0 req pty-req
+debug1: Allocating pty.
+debug1: session_new: session 0
+debug1: SELinux support disabled
+debug1: session_pty_req: session 0 alloc /dev/pts/5
+debug1: server_input_channel_req: channel 0 request env reply 0
+debug1: session_by_channel: session 0 channel 0
+debug1: session_input_channel_req: session 0 req env
+debug1: server_input_channel_req: channel 0 request shell reply 1
+debug1: session_by_channel: session 0 channel 0
+debug1: session_input_channel_req: session 0 req shell
+Starting session: shell on pts/5 for ecliz from 192.168.1.239 port 50762 id 0
+debug1: Setting controlling tty using TIOCSCTTY.
+debug1: Received SIGCHLD.
+debug1: session_by_pid: pid 2174
+debug1: session_exit_message: session 0 channel 0 pid 2174
+debug1: session_exit_message: release channel 0
+debug1: session_by_tty: session 0 tty /dev/pts/5
+debug1: session_pty_cleanup2: session 0 release /dev/pts/5
+Received disconnect from 192.168.1.239 port 50762:11: disconnected by user
+Disconnected from user ecliz 192.168.1.239 port 50762
+debug1: do_cleanup
+debug1: temporarily_use_uid: 1000/1000 (e=1000/1000)
+debug1: restore_uid: (unprivileged)
+debug1: do_cleanup
+debug1: PAM: cleanup
+debug1: PAM: closing session
+debug1: PAM: deleting credentials
+debug1: temporarily_use_uid: 1000/1000 (e=0/0)
+debug1: restore_uid: 0/0
+debug1: audit_event: unhandled event 12
