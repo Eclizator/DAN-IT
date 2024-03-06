@@ -37,4 +37,6 @@
   288  vim /etc/monit/monitrc
   289  systemctl restart monit
   290  systemctl status monit
-  291  monit status                                                                                                                                                  
+  291  monit status
+  292  monit monitor nginx
+  293  monit status                                                                                                                                                  

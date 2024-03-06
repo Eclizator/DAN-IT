@@ -1,23 +1,45 @@
-Monit 5.31.0 uptime: 12m
+Monit 5.31.0 uptime: 29m
 
 Process 'nginx'
-  status                       Not monitored
-  monitoring status            Not monitored
+  status                       OK
+  monitoring status            Monitored
   monitoring mode              active
   on reboot                    start
-  data collected               Wed, 06 Mar 2024 18:22:36
+  pid                          3487
+  parent pid                   1
+  uid                          0
+  effective uid                0
+  gid                          0
+  uptime                       23m
+  threads                      1
+  children                     4
+  cpu                          0.0%
+  cpu total                    0.0%
+  memory                       0.0% [1.6 MB]
+  memory total                 0.6% [24.1 MB]
+  security attribute           unconfined
+  filedescriptors              15 [1.5% of 1024 limit]
+  total filedescriptors        67
+  read bytes                   0 B/s [0 B total]
+  disk read bytes              0 B/s [0 B total]
+  disk read operations         0.0 reads/s [0 reads total]
+  write bytes                  0 B/s [0 B total]
+  disk write bytes             0 B/s [0 B total]
+  disk write operations        0.0 writes/s [0 writes total]
+  port response time           FAILED to [127.0.0.1]:80/index.html type TCP/IP protocol HTTP
+  data collected               Wed, 06 Mar 2024 18:46:27
 
 System 'orgrimar'
   status                       OK
   monitoring status            Monitored
   monitoring mode              active
   on reboot                    start
-  load average                 [0.02] [0.04] [0.00]
+  load average                 [0.08] [0.02] [0.01]
   cpu                          0.0%usr 0.0%sys 0.0%nice 0.0%iowait 0.0%hardirq 0.0%softirq 0.0%steal 0.0%guest 0.0%guestnice 
-  memory usage                 474.2 MB [12.1%]
+  memory usage                 467.8 MB [12.0%]
   swap usage                   0 B [0.0%]
-  uptime                       59m
+  uptime                       1h 18m
   boot time                    Wed, 06 Mar 2024 17:28:58
   filedescriptors              1312 [0.0% of 9223372036854775807 limit]
-  data collected               Wed, 06 Mar 2024 18:28:37
+  data collected               Wed, 06 Mar 2024 18:46:27
 
