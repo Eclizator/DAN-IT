@@ -1,0 +1,23 @@
+Monit 5.31.0 uptime: 12m
+
+Process 'nginx'
+  status                       Not monitored
+  monitoring status            Not monitored
+  monitoring mode              active
+  on reboot                    start
+  data collected               Wed, 06 Mar 2024 18:22:36
+
+System 'orgrimar'
+  status                       OK
+  monitoring status            Monitored
+  monitoring mode              active
+  on reboot                    start
+  load average                 [0.02] [0.04] [0.00]
+  cpu                          0.0%usr 0.0%sys 0.0%nice 0.0%iowait 0.0%hardirq 0.0%softirq 0.0%steal 0.0%guest 0.0%guestnice 
+  memory usage                 474.2 MB [12.1%]
+  swap usage                   0 B [0.0%]
+  uptime                       59m
+  boot time                    Wed, 06 Mar 2024 17:28:58
+  filedescriptors              1312 [0.0% of 9223372036854775807 limit]
+  data collected               Wed, 06 Mar 2024 18:28:37
+

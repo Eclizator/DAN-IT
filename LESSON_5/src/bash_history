@@ -1,0 +1,40 @@
+  235  useradd -m -d /home/dev1 dev1
+  236  useradd -m -d /home/dev2 dev2
+  239  useradd -m -d /home/dev3 dev3
+  240  groupadd developers
+  241  groupadd webmasters
+  243  usermod -aG developers dev1
+  244  usermod -aG developers dev2
+  245  usermod -aG webmasters dev3
+  246  passwd dev1
+  247  passwd dev2
+  248  passwd dev3
+  249  vim /etc/passwd
+  250  id dev1
+  251  id dev2
+  252  id dev3
+  253  useradd backupdev
+  254  cp -r /home/dev1 /home/backupdev
+  255  mkdir /home/web_project
+  256  chown :developers /home/web_project
+  257  chmod g+rw /home/web_project
+  258  touch /home/my.log
+  259  chattr +a /home/my.log
+  260  vim check_disk.sh
+  262  chmod +x check_disk.sh
+  263  bash check_disk.sh
+  266  crontab -e
+  276  apt install monit
+  277  apt install nginx
+  278  vim /etc/monit/conf.d/nginx
+  279  monit reload
+  280  monit status
+  283  systemctl restart monit
+  284  systemctl status monit
+  285  systemctl enable --now monit
+  286  systemctl status monit
+  287  monit status
+  288  vim /etc/monit/monitrc
+  289  systemctl restart monit
+  290  systemctl status monit
+  291  monit status                                                                                                                                                  
