@@ -1,0 +1,14 @@
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu/bionic64"
+
+  # Configure the public network
+  config.vm.network "public_network"
+
+  # Provisioning script to install and configure Nginx
+  config.vm.provision "shell", inline: <<-SHELL
+    sudo apt-get update
+    sudo apt-get install -y nginx
+    sudo sed -i 's/listen 80;/listen 82;/' /etc/nginx/sites-available/default
+    sudo systemctl restart nginx
+  SHELL
+end
