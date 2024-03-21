@@ -1,0 +1,44 @@
+    1  ls -la
+    2  cd ecliz/
+    3  ls -la
+    4  pwd
+    5  mkdir PROJECT_DIR
+    6  cd PROJECT_DIR/
+    7  git clone https://github.com/spring-projects/spring-petclinic.git
+    8  ls -la
+    9  ls -la spring-petclinic/
+   10  ./mvnw clean test package
+   11  cd spring-petclinic/
+   12  ./mvnw clean test package
+   13  java -version
+   14  ls -la
+   15  cd ~
+   16  cd PROJECT_DIR/
+   17  cd spring-petclinic/
+   18  ls -la
+   19  ./mvnw clean test package
+   20  ls -la
+   21  ls -la target/
+   22  mv target/*.jar /home/ecliz/
+   23  ls -la
+   24  cd ~
+   25  ls -la
+   26  cd PROJECT_DIR/spring-petclinic/target/
+   27  ls -la
+   28  ip a
+   29  cd ..
+   30  cd..
+   31  cd ..
+   32  ls -la
+   33  vim env.sh
+   34  ls -la
+   35  bash env.sh
+   36  cd PROJECT_DIR/
+   37  ls -la
+   38  cd spring-petclinic/
+   39  ls -la
+   40  cd..
+   41  cd ~
+   42  ls -la
+   43  java -jar *.jar --server.address=192.168.50.11 --server.port=8080
+   44  history
