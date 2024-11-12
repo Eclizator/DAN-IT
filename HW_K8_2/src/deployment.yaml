@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: random-app-namespace
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: random-app-namespace
+  template:
+    metadata:
+      labels:
+        app: random-app-namespace
+    spec:
+      containers:
+      - name: random-string-container
+        image: eclizator/random-string-app  
+        ports:
+        - containerPort: 80
+
